@@ -23,9 +23,12 @@ root = tk.Tk()
 root.title("집 갈 시간 계산기")
 root.geometry("300x150")
 
+root.attributes("-topmost", True)
+
 result_label = tk.Label(root, text="", font=("Helvetica", 16))
 result_label.pack(pady=40)
 
 update_time()
 
 root.mainloop()
+
